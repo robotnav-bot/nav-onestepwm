@@ -3,34 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals.">
+  <meta name="keywords" content="Navigation, World Models, Robotics, 3D U-Net, Diffusion Policies">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Efficient and Versatile: Navigation with One-Step World Models</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -52,122 +43,64 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://scholar.google.com/citations?user=fy3BKH4AAAAJ&hl">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=fy3BKH4AAAAJ&hl">Wangtian SHEN</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Tsinghua University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>Video</span>
                 </a>
               </span>
-              <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="far fa-images"></i></span>
                   <span>Data</span>
-                  </a>
+                </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -178,265 +111,214 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <img src="./static/images/task-demo-new.png" alt="Task Demo" style="width: 100%;">
+          <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+            Our world-model-based framework enables<strong> multi-modal goal-conditioned navigation</strong>, including image, language, and point goals.
+          </h2>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Navigation is a fundamental capability for mobile robots. While learning-based approaches have increasingly supplanted traditional geometry-based methods, existing end-to-end policies often struggle with 3D spatial reasoning and lack a comprehensive understanding of physical world dynamics. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Integrating world models—which predict future observations conditioned on given actions—with iterative optimization planning offers a promising solution due to their capacity for imagination and flexibility. However, current navigation world models, typically built on pure Transformer architectures, often rely on multi-step diffusion processes and autoregressive frame-by-frame generation. These mechanisms result in prohibitive computational latency, rendering real-time deployment impractical. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            To address this bottleneck, we propose a lightweight navigation world model that adopts a one-step generation paradigm and a 3D U-Net backbone equipped with efficient spatial-temporal attention. This design drastically reduces inference latency, enabling high-frequency control while achieving superior predictive performance. We integrate this model into an optimization-based planning framework utilizing anchor-based initialization to handle multi-modal goal conditions. Extensive closed-loop experiments in both simulation and real-world environments demonstrate our system's superior efficiency and robustness compared to state-of-the-art baselines.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">System Architecture</h2>
+        <div class="content has-text-justified">
+          <!-- <p>
+            The overall framework of our proposed method.
+          </p> -->
+        </div>
+        <img src="./static/images/architecture.png" alt="Architecture" style="width: 100%; margin-top: 10px; margin-bottom: 20px;">
+        <div class="content has-text-justified">
+          <p>
+            Our system introduces a shortcut-based one-step generation paradigm for navigation world model. Unlike traditional diffusion models that require expensive iterative denoising, our world model directly predicts a sequence of 11 future frames in a single step. We utilize a 3D U-Net backbone operating within a VAE latent space. To handle high-dimensional video data efficiently, we employ a hybrid CNN-Transformer architecture with decoupled spatial and temporal attention. Specifically, a window-based temporal attention mechanism allows the model to capture complex dynamics without the quadratic complexity of full global attention. We integrate this lightweight world model into a model-based planning framework using the Cross-Entropy Method (CEM). To ensure robust performance under limited computational budgets (small sample size), we propose an anchor-based initialization strategy. Instead of random sampling, this approach initializes candidate trajectories using fixed velocity priors, significantly improving the planner's efficiency and success rate across multi-modal tasks (Image, Language, and Point goals).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Simulation Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            We evaluate our method in Habitat-sim across different modalities: Image-Goal, Language-Goal, and Point-Goal navigation. The sequence below the video displays the world model's predictions corresponding to the current optimal planned trajectory.
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
-    <!--/ Animation. -->
 
-
-    <!-- Concurrent Work. -->
+    <h3 class="title is-4 has-text-centered">Image-Goal Navigation</h3>
+    <div class="content has-text-justified">
+      <p>
+        To implement image-goal navigation, we employ LPIPS as loss function to score sampled trajectories. Drawing inspiration from prior vision-based approaches, we utilize a topological memory system to achieve long-horizon navigation. Specifically, the process initiates with the first observation. At each time step, a distance estimation network identifies the nearest node in the topological graph to estimate the current location. Subsequently, the image of the adjacent node is fed into the policy system as the immediate target. 
+      </p>
+    </div>
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/image/0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/image/1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/image/2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/image/3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/image/4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <br>
 
+    <h3 class="title is-4 has-text-centered">Language-Goal Navigation</h3>
+    <div class="content has-text-justified">
+      <p>
+        To implement language-goal navigation, we employ SigLIP as the scoring function to evaluate sampled trajectories.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/language/0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/language/1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/language/2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/language/3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/language/4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <br>
+
+    <h3 class="title is-4 has-text-centered">Point-Goal Navigation</h3>
+    <div class="content has-text-justified">
+      <p>
+        To implement Point-Goal Navigation, we incorporate Depth-Anything to perform monocular depth estimation on the predicted future images. We formulate a composite planning loss function to evaluate candidate trajectories. Specifically, this loss is defined as the weighted sum of two terms: (1) the Euclidean distance between the terminal point of the sampled trajectory and the target coordinate, and (2) the negative mean depth value in the central region of the predicted image (to penalize proximity to obstacles).
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/point/0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/point/1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/point/2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/point/3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-fifth">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/sim/point/4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Real-World Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            We deploy our model on a physical robot to test its robustness in real-world environments.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
 
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <h5 class="title is-5 has-text-centered">Image-Goal</h5>
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/real/image.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-one-third">
+        <h5 class="title is-5 has-text-centered">Language-Goal</h5>
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/real/language.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-one-third">
+        <h5 class="title is-5 has-text-centered">Point-Goal</h5>
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/real/point.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -444,11 +326,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{shen2024navigation,
+  author    = {Wangtian Shen},
+  title     = {Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals},
+  journal   = {arXiv preprint},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
@@ -457,11 +339,10 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <a class="icon-link" href="#">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="#" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -474,11 +355,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website template was adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
