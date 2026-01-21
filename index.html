@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals.">
+        content="An Efficient and Multi-Modal Navigation System with One-Step World Model.">
   <meta name="keywords" content="Navigation, World Models, Robotics, 3D U-Net, Diffusion Policies">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Efficient and Versatile: Navigation with One-Step World Models</title>
+  <title>An Efficient and Multi-Modal Navigation System with One-Step World Model</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -57,49 +57,66 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals</h1>
+          <h1 class="title is-1 publication-title">An Efficient and Multi-Modal Navigation System with One-Step World Model</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=fy3BKH4AAAAJ&hl">Wangtian SHEN</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=fy3BKH4AAAAJ&hl">Wangtian Shen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Ziyang Meng</a><sup>1 *</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Jinming Ma</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Mingliang Zhou</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Diyun Xiang</a><sup>2</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Tsinghua University</span>
+            <p>
+            <span class="author-block"><sup>1</sup>Department of Precision Instrument, Tsinghua University,</span>
+            </p>
+            <p>
+            <span class="author-block"><sup>2</sup>Xiaomi Robotics Lab, Beijing, China</span>
+            </p>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2601.12277" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2601.12277" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="#" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/robotnav-bot/NOW" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="#" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="far fa-images"></i></span>
                   <span>Data</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -130,13 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Navigation is a fundamental capability for mobile robots. While learning-based approaches have increasingly supplanted traditional geometry-based methods, existing end-to-end policies often struggle with 3D spatial reasoning and lack a comprehensive understanding of physical world dynamics. 
-          </p>
-          <p>
-            Integrating world models—which predict future observations conditioned on given actions—with iterative optimization planning offers a promising solution due to their capacity for imagination and flexibility. However, current navigation world models, typically built on pure Transformer architectures, often rely on multi-step diffusion processes and autoregressive frame-by-frame generation. These mechanisms result in prohibitive computational latency, rendering real-time deployment impractical. 
-          </p>
-          <p>
-            To address this bottleneck, we propose a lightweight navigation world model that adopts a one-step generation paradigm and a 3D U-Net backbone equipped with efficient spatial-temporal attention. This design drastically reduces inference latency, enabling high-frequency control while achieving superior predictive performance. We integrate this model into an optimization-based planning framework utilizing anchor-based initialization to handle multi-modal goal conditions. Extensive closed-loop experiments in both simulation and real-world environments demonstrate our system's superior efficiency and robustness compared to state-of-the-art baselines.
+            Navigation is a fundamental capability for mobile robots. While the current trend is to use learning-based approaches to replace traditional geometry-based methods, existing end-to-end learning-based policies often struggle with 3D spatial reasoning and lack a comprehensive understanding of physical world dynamics. Integrating world models—which predict future observations conditioned on given actions—with iterative optimization planning offers a promising solution due to their capacity for imagination and flexibility. However, current navigation world models, typically built on pure transformer architectures, often rely on multi-step diffusion processes and autoregressive frame-by-frame generation. These mechanisms result in prohibitive computational latency, rendering real-time deployment impossible. To address this bottleneck, we propose a lightweight navigation world model that adopts a one-step generation paradigm and a 3D U-Net backbone equipped with efficient spatial-temporal attention. This design drastically reduces inference latency, enabling high-frequency control while achieving superior predictive performance. We also integrate this model into an optimization-based planning framework utilizing anchor-based initialization to handle multi-modal goal navigation tasks. Extensive closed-loop experiments in both simulation and real-world environments demonstrate our system's superior efficiency and robustness compared to state-of-the-art baselines.
           </p>
         </div>
       </div>
@@ -328,7 +339,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{shen2024navigation,
   author    = {Wangtian Shen},
-  title     = {Efficient and Versatile: Navigation with One-Step World Models for Multi-Modal Goals},
+  title     = {An Efficient and Multi-Modal Navigation System with One-Step World Model},
   journal   = {arXiv preprint},
   year      = {2024},
 }</code></pre>
@@ -339,21 +350,16 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="#">
+      <a class="icon-link" href="https://arxiv.org/pdf/2601.12277">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="#" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/robotnav-bot/NOW" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
           <p>
             This website template was adapted from <a
               href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
